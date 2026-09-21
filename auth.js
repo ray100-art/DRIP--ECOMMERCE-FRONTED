@@ -1,6 +1,6 @@
 /* ============================================
    DRIP — auth.js (simplified)
-   Token is set by login.html
+   Token is set by index.html (sign-in page)
    This file just reads it and updates navbar
    ============================================ */
 
@@ -16,7 +16,7 @@ function getUser() {
 function handleLogout() {
   sessionStorage.removeItem('drip-token');
   sessionStorage.removeItem('drip-user');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 function updateNavbarUserState() {
@@ -41,7 +41,7 @@ function updateNavbarUserState() {
 
 /* clicking the person icon goes to login page */
 document.getElementById('authBtn')?.addEventListener('click', () => {
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 });
 
 /* init */

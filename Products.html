@@ -716,7 +716,7 @@ function closeCart() { document.getElementById('cartOverlay').classList.remove('
 /* ===== AUTH ===== */
 function getToken() { return sessionStorage.getItem('drip-token'); }
 function getUser()  { const u = sessionStorage.getItem('drip-user'); return u ? JSON.parse(u) : null; }
-function handleLogout() { sessionStorage.removeItem('drip-token'); sessionStorage.removeItem('drip-user'); window.location.href = 'login.html'; }
+function handleLogout() { sessionStorage.removeItem('drip-token'); sessionStorage.removeItem('drip-user'); window.location.href = 'index.html'; }
 function updateNavbarUserState() {
   const user = getUser();
   const authBtn = document.getElementById('authBtn');
